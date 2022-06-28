@@ -1,0 +1,27 @@
+services:
+  mysql:
+    image: mysql:5.6
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_DATABASE=store
+      - MYSQL_USER=app_user
+      - MYSQL_PASSWORD=123
+    ports:
+      - 3307:3306
+    volumes:
+      - mysql-db-store:/var/lib/mysql
+
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: api-spring
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-db-store:

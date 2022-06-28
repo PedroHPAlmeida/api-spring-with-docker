@@ -1,0 +1,226 @@
+2022-06-27 23:30:21,459 [   1300]   WARN - #c.i.n.i.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@736cfac0). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=/opt/idea-IU-221.5921.22/plugins/cwm-plugin, version=221.5921.22, package=null, isBundled=true)
+Info  | RdCoroutineScope          | 11:JobScheduler FJ pool 1/7 | RdCoroutineHost overridden 
+2022-06-27 23:30:28,126 [   7967]   WARN - #c.a.t.i.a.AvdManagerConnection - No Android SDK Found
+2022-06-27 23:30:28,554 [   8395]   WARN - #c.i.o.a.i.ActionUpdater - 407 ms to grab EDT for OpenFileAction#update (com.intellij.ide.actions.OpenFileAction)
+2022-06-27 23:30:28,770 [   8611]   WARN - #c.i.o.a.i.ActionUpdater - 288 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup)
+2022-06-27 23:30:28,796 [   8637]   WARN - #c.i.o.a.i.ActionUpdater - 239 ms to grab EDT for SaveAllAction#update (com.intellij.ide.actions.SaveAllAction)
+[]
+[]
+Changing log factory from com.intellij.idea.LoggerFactory to com.haulmont.jpb.logger.JpabLoggerFactory
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.Logger.logFactoryChanged(Logger.java:76)
+	at com.intellij.openapi.diagnostic.Logger.setFactory(Logger.java:67)
+	at com.haulmont.jpb.action.persistenceunit.PersistenceUnitStartupActivity.runActivity(PersistenceUnitStartupActivity.kt:41)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.kt:311)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:290)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration$default(StartupManagerImpl.kt:285)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1$2.run(StartupManagerImpl.kt:249)
+	at com.intellij.openapi.project.DumbServiceImpl.doRun(DumbServiceImpl.java:398)
+	at com.intellij.openapi.project.DumbServiceImpl.updateFinished(DumbServiceImpl.java:390)
+	at com.intellij.openapi.project.TrackedEdtActivityService$TrackedEdtActivity.run(TrackedEdtActivityService.java:66)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:215)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:197)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:873)
+	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:511)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:69)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:112)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:42)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:898)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:439)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:803)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:438)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:604)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:436)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:873)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:484)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+
+2022-06-27 23:30:37,390 [  17231]   WARN - #c.i.u.x.Binding - no accessors for com.haulmont.jpb.model.dbtype.DbType
+2022-06-27 23:30:37,788 [  17629]   WARN - #c.i.o.a.i.ActionUpdater - 305 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction)
+2022-06-27 23:30:37,789 [  17630]   WARN - #c.i.o.a.i.ActionUpdater - 305 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup)
+2022-06-27 23:30:38,374 [  18215]   WARN - #c.i.o.a.i.ActionUpdater - 584 ms to grab EDT for CodeWithMeUsersAction#update (com.jetbrains.rd.platform.codeWithMe.toolbar.CodeWithMeUsersAction)
+2022-06-27 23:30:38,670 [  18511]   WARN - #c.i.o.a.i.ActionUpdater - 295 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction)
+2022-06-27 23:30:38,672 [  18513]   WARN - #c.i.o.a.i.ActionUpdater - 294 ms to grab EDT for CWMHostShowPopupAction#update (com.jetbrains.rdserver.toolbar.CWMHostShowPopupAction)
+2022-06-27 23:31:18,888 [  58729]   WARN - #o.j.i.maven - Maven pulling logger was failed: 1 times
+2022-06-27 23:31:18,888 [  58729]   WARN - #o.j.i.maven - Maven pulling download listener was failed: 1 times
+[]
+[]
+2022-06-27 23:31:24,569 [  64410]   WARN - #c.i.o.a.i.ActionUpdater - 350 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction)
+[]
+[]
+2022-06-27 23:31:35,981 [  75822]   WARN - #c.a.t.i.a.AvdManagerConnection - No Android SDK Found
+[]
+[]
+[]
+[]
+[]
+2022-06-27 23:36:56,741 [ 396582] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:36:56,742 [ 396583] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:36:57,239 [ 397080] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:36:57,530 [ 397371] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:01,360 [ 401201] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:01,361 [ 401202] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:01,770 [ 401611] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:08,576 [ 408417] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:08,577 [ 408418] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:09,079 [ 408920] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:09,582 [ 409423] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:09,582 [ 409423] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:10,084 [ 409925] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:10,588 [ 410429] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:10,589 [ 410430] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:11,091 [ 410932] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:11,595 [ 411436] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:11,596 [ 411437] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:12,099 [ 411940] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:12,602 [ 412443] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:12,602 [ 412443] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:13,104 [ 412945] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:13,580 [ 413421] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:18,893 [ 418734] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:18,894 [ 418735] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:19,396 [ 419237] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:19,528 [ 419369] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:21,346 [ 421187] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:21,346 [ 421187] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:21,850 [ 421691] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:21,851 [ 421692] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:22,354 [ 422195] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:22,857 [ 422698] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:22,858 [ 422699] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:23,361 [ 423202] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:23,865 [ 423706] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:23,865 [ 423706] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:24,372 [ 424213] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:24,875 [ 424716] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:24,875 [ 424716] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:25,378 [ 425219] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:25,882 [ 425723] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:25,882 [ 425723] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:26,384 [ 426225] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:26,887 [ 426728] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:26,887 [ 426728] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:27,390 [ 427231] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:27,893 [ 427734] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:27,894 [ 427735] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:28,396 [ 428237] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:28,899 [ 428740] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:28,900 [ 428741] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:29,402 [ 429243] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:29,905 [ 429746] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:29,906 [ 429747] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:30,408 [ 430249] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:30,910 [ 430751] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:30,910 [ 430751] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:31,412 [ 431253] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:31,915 [ 431756] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:31,915 [ 431756] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:32,417 [ 432258] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:32,919 [ 432760] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:32,920 [ 432761] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:33,421 [ 433262] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:33,922 [ 433763] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:33,922 [ 433763] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:34,424 [ 434265] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:34,926 [ 434767] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:34,927 [ 434768] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:35,429 [ 435270] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:35,931 [ 435772] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:35,932 [ 435773] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:36,434 [ 436275] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:36,937 [ 436778] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:36,938 [ 436779] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:37,439 [ 437280] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:37,941 [ 437782] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:37,942 [ 437783] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:38,444 [ 438285] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:38,949 [ 438790] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:38,950 [ 438791] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:39,452 [ 439293] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:39,955 [ 439796] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:39,956 [ 439797] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:40,459 [ 440300] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:40,962 [ 440803] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:40,963 [ 440804] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,162 [ 441003] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,163 [ 441004] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,201 [ 441042] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,202 [ 441043] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+[]
+2022-06-27 23:37:41,624 [ 441465] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,625 [ 441466] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,677 [ 441518] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:41,677 [ 441518] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+[]
+2022-06-27 23:37:49,203 [ 449044] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:49,203 [ 449044] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:49,253 [ 449094] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:49,253 [ 449094] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:49,280 [ 449121] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:49,280 [ 449121] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+[]
+2022-06-27 23:37:49,703 [ 449544] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,206 [ 450047] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,207 [ 450048] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,710 [ 450551] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,936 [ 450777] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,936 [ 450777] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,982 [ 450823] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:37:50,983 [ 450824] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+[]
+[]
+[]
+[]
+2022-06-27 23:38:21,576 [ 481417] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,587 [ 481428] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,613 [ 481454] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,613 [ 481454] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,657 [ 481498] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,658 [ 481499] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,705 [ 481546] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,705 [ 481546] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,900 [ 481741] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,900 [ 481741] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,933 [ 481774] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,933 [ 481774] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,950 [ 481791] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:21,950 [ 481791] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+[]
+[]
+2022-06-27 23:38:30,112 [ 489953]   WARN - #c.i.u.x.Binding - no accessors for org.jetbrains.idea.perforce.perforce.ConnectionId
+[]
+2022-06-27 23:38:32,651 [ 492492] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:32,652 [ 492493] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:32,716 [ 492557] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:32,717 [ 492558] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,654 [ 494495] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,654 [ 494495] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,719 [ 494560] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,720 [ 494561] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,765 [ 494606] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:34,766 [ 494607] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:35,218 [ 495059] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:35,219 [ 495060] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:35,720 [ 495561] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:36,139 [ 495980] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:44,015 [ 503856] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:44,016 [ 503857] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:44,517 [ 504358] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:45,019 [ 504860] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:45,020 [ 504861] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2022-06-27 23:38:45,420 [ 505261] SEVERE - c.j.t.m.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
